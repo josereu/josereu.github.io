@@ -72,9 +72,9 @@ body{
      font-family: roboto;
 }
 .login-box input[type="submit"]:hover{
-     cursor:pointer;
+     /*cursor:pointer;
      background: darkgray;
-     color:#fff;
+     color:#fff;*/
 }
 .login-box a {
      text-decoration: none;
