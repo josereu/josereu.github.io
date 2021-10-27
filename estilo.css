@@ -1,0 +1,23 @@
+body{
+     background-color: #272727;
+}
+input{
+     font-size: 50px;
+}
+button{
+     width: 200px;
+     height: 50px;
+}
+#contenedor{
+     margin: 0%;    
+}
+.contenedorBotones{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.contenedorResultado{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
