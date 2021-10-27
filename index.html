@@ -23,7 +23,6 @@
 </body>
 <script src="sdk/microsoft.cognitiveservices.speech.sdk.bundle-min.js"></script>
 <script>
-     // status fields and start button in UI
      var subscriptionKey = "ee745a61cf044b49b3f0503de9728a18";
      var serviceRegion = "southcentralus";
      var phraseDiv;
@@ -50,7 +49,6 @@
                recognizer.startContinuousRecognitionAsync();
                recognizer.recognized = function (s, e) {
                     phraseDiv.value += e.result.text;
-                    console.log(e.result);
                };
           });
 
@@ -68,9 +66,6 @@
           if (!!window.SpeechSDK) {
                SpeechSDK = window.SpeechSDK;
                startRecognizeAsyncButton.disabled = false;
-               document.getElementById('content').style.display = 'block';
-               document.getElementById('warning').style.display = 'none';
-               // in case we have a function for getting an authorization token, call it.
                if (typeof RequestAuthorizationToken === "function") {
                     RequestAuthorizationToken();
                }
