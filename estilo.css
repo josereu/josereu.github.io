@@ -55,6 +55,7 @@ body{
           font-size: 50px;
           border-radius: 5px;
           width: 100%;
+          text-transform: uppercase;
      }
      button{
           width: 100%;
@@ -66,7 +67,9 @@ body{
           border-radius: 5px;     
           margin-bottom: 10px;
      }
-
+     button :disabled{
+          box-shadow: slategrey;
+     }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
