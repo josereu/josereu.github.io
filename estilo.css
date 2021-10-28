@@ -37,24 +37,27 @@ h3{
      text-align: center;
      font-size: 15px;
 }
+#contenedor{
+     /*border: solid #c50000 1px;*/
+     margin: 0px;
+}
 #contenedorBotones{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin: 0px;
+     margin-left:10px;
+     margin-right: 10px;
      /*border: solid #c50000 1px;*/
-}
-#contenedor{
-     /*border: solid #c50000 1px;*/
-     margin: 0px;
 }
 #contenedorResultado{
      padding: 0px;
      align-items: center;
      /*border: solid #c50000 1px;*/
+     margin-left:10px;
+     margin-right: 10px;
 }
 input{
-     font-size: 75px;
+     font-size: 50px;
      border-radius: 5px;
      width: 100%;
 }
