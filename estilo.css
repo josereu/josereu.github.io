@@ -37,7 +37,7 @@ body{
      }
      #contenedor{
           /*border: solid #c50000 1px;*/
-          margin: 0px;
+          
      }
      #contenedorBotones{
           display: flex;
@@ -84,7 +84,7 @@ h3{
 }
 #contenedor{
      /*border: solid #c50000 1px;*/
-     margin: 0px;
+     
 }
 #contenedorBotones{
      display: flex;
