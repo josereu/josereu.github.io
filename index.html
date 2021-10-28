@@ -54,7 +54,12 @@
                phraseDiv.innerHTML = "";
                recognizer.startContinuousRecognitionAsync();
                recognizer.recognized = function (s, e) {
-                    phraseDiv.value += e.result.text;
+                    var resultado = e.result.text;
+                    console.log("resultado: " + resultado);
+                    if(resultado == undefined){
+                         resultado = "Sin respuesta";
+                    }
+                    phraseDiv.value += resultado;
                };
           });
 
