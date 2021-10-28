@@ -16,7 +16,7 @@
 
 <body>
     <div id="contenedor">
-        <h3>Búsqueda de historial Taller de Servicio</h3>
+        <h3>Búsqueda de historial <br> Taller de Servicio</h3>
         <div id="contenedorBotones">
             <button id="startRecognizeAsyncButton"><i class="icon-mic"></i>Hablar</button>
             <button id="stopRecognizeAsyncButton"><i class="icon-stop"></i>Terminar</button>
@@ -58,9 +58,11 @@
                 var resultado = e.result.text;
                 console.log("resultado: " + resultado);
                 if (resultado == undefined) {
-                    resultado = "Sin interpretación";
+                    resultado = "¿?";
+                    phraseDiv.value += resultado;
+                } else {
+                    phraseDiv.value += resultado;
                 }
-                phraseDiv.value += resultado;
             };
         });
 
