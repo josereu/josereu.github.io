@@ -58,9 +58,11 @@
                 var resultado = e.result.text;
                 console.log("resultado: " + resultado);
                 if (resultado == undefined) {
-                    resultado = "¿?";
+                    resultado = "";
                     phraseDiv.value += resultado;
                 } else {
+                    resultado = resultado.split(' ').join('');
+                    resultado = resultado.replace(".", "");
                     phraseDiv.value += resultado;
                 }
             };
