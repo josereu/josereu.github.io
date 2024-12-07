@@ -11,7 +11,7 @@ body {
 .animated-background {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right,
+    background: linear-gradient(to right top,
             #141D26,
             #243447,
             #C51F5D);
