@@ -12,9 +12,9 @@ body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right,
-            #C51F5D,
+            #141D26,
             #243447,
-            #141D26);
+            #C51F5D);
     background-size: 600% 600%;
     /* Incrementar el tamaño */
     animation: animate-background 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
