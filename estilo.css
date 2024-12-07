@@ -17,7 +17,7 @@ body {
             #C51F5D);
     background-size: 600% 600%;
     /* Incrementar el tamaño */
-    animation: animate-background 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    animation: animate-background 10s infinite cubic-bezier(0.4, 0, 0.2, 1);
     /* Suavidad */
 }
 
