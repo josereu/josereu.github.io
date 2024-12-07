@@ -6,6 +6,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #000;
+
+    font-family: "Monaspace Neon", monospace;
+    font-weight: 200;
+
+    font-size: calc(max(3.1415926535vmin, 16px));
+    line-height: 133%;
 }
 
 .animated-background {
@@ -33,4 +39,57 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.terminal {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    transition: transform 1.15s 0.15s cubic-bezier(0.5, 0, .82, 1.0);
+    transform-origin: bottom left;
+}
+
+.terminal p {
+    margin-top: 0;
+}
+
+.typedLine {
+    white-space: pre-wrap;
+    /* mask-image: linear-gradient(to right, black 50%, transparent 55%); */
+    animation: reveal 200ms linear forwards;
+    mask-position: 0%;
+    mask-size: 200%;
+    max-width: 34em;
+    color: #fbfbfb;
+}
+
+@keyframes reveal {
+    from { mask-position: 100% 100%; }
+    to { mask-position: 0% 0%; }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-weight: 300
+    }
+}
+
+@font-face {
+    font-family: 'Monaspace Krypton';
+    font-weight: 1 999;
+    src: url('/public/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Monaspace Neon';
+    font-weight: 1 999;
+    src: url('/public/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Monaspace Xenon';
+    font-weight: 1 999;
+    src: url('/public/fonts/MonaspaceXenonVarVF[wght,wdth,slnt].woff2') format('woff2');
 }
