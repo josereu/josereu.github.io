@@ -90,5 +90,5 @@ body {
 @font-face {
     font-family: 'Monaspace Xenon';
     font-weight: 1 999;
-    src: url('/public/fonts/MonaspaceXenonVarVF[wght,wdth,slnt].woff2') format('woff2');
+    src: url('MonaspaceNeon.woff2');
 }
