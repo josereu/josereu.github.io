@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulación de Terminal</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #terminal {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .line {
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="terminal"></div>
+
+    <!-- Librería Typewriter.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
+    <script>
+        const terminal = document.getElementById('terminal');
+
+        const typewriter = new Typewriter(terminal, {
+            loop: false, // No repetir
+            delay: 50,   // Velocidad de escritura
+        });
+
+        typewriter
+            .typeString('<span class="line">portafolios/ls</span>\n') // Primer comando
+            .pauseFor(1000) // Pausa para simular proceso
+            .typeString('<span class="line">expediente1</span>\n') // Respuesta del comando
+            .pauseFor(1000) // Pausa para el siguiente comando
+            .typeString('<span class="line">portafolios/cd expediente1 ls</span>\n') // Segundo comando
+            .pauseFor(1000) // Simula proceso
+            .typeString('<span class="line">contenido1.txt   contenido2.txt   reporte.pdf</span>\n') // Respuesta del comando
+            .start(); // Inicia la animación
+    </script>
+</body>
+
+</html>

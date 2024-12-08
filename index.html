@@ -6,19 +6,38 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Animated Background</title>
      <link rel="stylesheet" href="estilo.css">
+     <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
 </head>
 
 <body>
      <div class="animated-background">
           <div class="terminal">
-               <div class="typedLine" style="opacity: 1;"><span>We’re building the</span></div>
+               <!--<div class="typedLine" style="opacity: 1;"><span>We’re building the</span></div>
                <div class="typedLine" style="opacity: 1;"><span>next-gen operating system</span></div>
-               <div class="typedLine" style="opacity: 1;"><span>for AI agents.</span></div>
-               <div class="typedLine" style="opacity: 1;">
-                    <p class="old-prompt"><span><span>portafolio/José Miguel Tojil Gento/ &gt; ls</span><br></span></p>
+               <div class="typedLine" style="opacity: 1;"><span>for AI agents.</span></div>-->
+               <div id="typewriter" class="typing typedLine" style="opacity: 1;">
+
                </div>
           </div><!--terminal-->
      </div>
+
+     <script>
+          const typewriter = new Typewriter('#typewriter', {
+               loop: false, // No repetir
+               delay: 50,   // Velocidad de escritura
+          });
+
+          typewriter
+               .typeString('<span class="line">portafolios/ls</span>\n') // Primer comando
+               .pauseFor(1000) // Pausa para simular proceso
+               .typeString('<span class="line">José Miguel Tojil Gento</span>\n') // Respuesta del comando
+               .pauseFor(1000) // Pausa para el siguiente comando
+               .typeString('<span class="line">portafolios/cd José Miguel Tojil Gento</span>\n') // Segundo comando
+               .pauseFor(1000) // Simula proceso
+               .typeString('<span class="line">portafolio.pdf</span>\n') // Respuesta del comando
+               .start(); // Inicia la animación
+     </script>
+
 </body>
 
 </html>
