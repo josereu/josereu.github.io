@@ -11,7 +11,7 @@
             padding: 0;
             height: 100vh;
             overflow: hidden;
-            background: #1a1a1a;
+            background: #141D26;
             position: relative;
         }
 
@@ -19,12 +19,12 @@
             position: absolute;
             top: -200px;
             /* Ubica el círculo fuera del viewport inicialmente */
-            right: -200px;
+            right: -300px;
             /* Centra desde el borde superior derecho */
             width: 600px;
             /* Tamaño inicial del círculo */
             height: 500px;
-            background: radial-gradient(circle, #ff7eb3, #ff758c, #ff6b6b);
+            background: radial-gradient(circle, #141D26, #C51F5D, #C51F5D);
             border-radius: 50%;
             filter: blur(40px);
             /* Desenfoque para un efecto suave */
@@ -48,10 +48,30 @@
             }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
 </head>
 
 <body>
-    <div class="gradient-circle"></div>
+    <div class="gradient-circle">
+        <div id="typewriter" class="typing typedLine" style="opacity: 1;"></div>
+    </div><!--gradient-circle-->
+        
+    <script>
+        const typewriter = new Typewriter('#typewriter', {
+            loop: false, // No repetir
+            delay: 50,   // Velocidad de escritura
+        });
+
+        typewriter
+            .typeString('<span class="line">portafolios/ls</span>\n') // Primer comando
+            .pauseFor(1000) // Pausa para simular proceso
+            .typeString('<span class="line">José Miguel Tojil Gento</span>\n') // Respuesta del comando
+            .pauseFor(1000) // Pausa para el siguiente comando
+            .typeString('<span class="line">portafolios/cd José Miguel Tojil Gento</span>\n') // Segundo comando
+            .pauseFor(1000) // Simula proceso
+            .typeString('<span class="line">portafolio.pdf</span>\n') // Respuesta del comando
+            .start(); // Inicia la animación
+    </script>
 </body>
 
 </html>
