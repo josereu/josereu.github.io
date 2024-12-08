@@ -84,7 +84,7 @@ body {
 @font-face {
     font-family: 'Monaspace Neon';
     font-weight: 1 999;
-    src: url('/public/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2');
+    src: url('MonaspaceNeon.woff2') format('woff2');
 }
 
 @font-face {
