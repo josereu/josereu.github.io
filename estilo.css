@@ -57,7 +57,6 @@ body {
 
 .typedLine {
     white-space: pre-wrap;
-    /* mask-image: linear-gradient(to right, black 50%, transparent 55%); */
     animation: reveal 200ms linear forwards;
     mask-position: 0%;
     mask-size: 200%;
