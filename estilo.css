@@ -76,18 +76,6 @@ body {
 }
 
 @font-face {
-    font-family: 'Monaspace Krypton';
-    font-weight: 1 999;
-    src: url('/public/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Monaspace Neon';
-    font-weight: 1 999;
-    src: url('MonaspaceNeon.woff2') format('woff2');
-}
-
-@font-face {
     font-family: 'Monaspace Xenon';
     font-weight: 1 999;
     src: url('MonaspaceNeon.woff2');
